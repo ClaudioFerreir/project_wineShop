@@ -11,7 +11,7 @@ body {
   background-color: transparent;
 }
 
-.navbar .navbar-brand {
+.special-font {
   color: #800020;
   font-family: 'Concert One', cursive;
   text-shadow: 1px 1px #fff;
@@ -46,6 +46,10 @@ video {
 }
 
 /*carousel*/
+.carousel-fade .carousel-item {
+  transition-duration: 1s;
+}
+
 .carousel-area {
   position: relative;
   top: 350px;
@@ -90,8 +94,26 @@ video {
   background-color: #E6B8B7;
 } 
 
+/*sobre a loja section*/
+#sobre-a-loja .row {
+  margin-top: 250px;
+}
+
+#sobre-a-loja .col-md-5 img {
+  height: 500px;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+#sobre-a-loja .col-md-7 p,
+#sobre-a-loja .col-md-7 ul li {
+  font-size: 0.9em;
+  text-align: justify;
+}
+
 /*md screen*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /*carousel*/
   .carousel-area {
     top: 55vh;
     padding-right: 15px;
@@ -100,6 +122,13 @@ video {
 
   .box p {
     font-size: 1em;
+  }
+
+  /*sobre-a-loja section*/
+  #sobre-a-loja .col-md-7 p,
+  #sobre-a-loja .col-md-7 ul li {
+    font-size: 0.8em;
+    text-align: justify;
   }
 }
 
@@ -132,6 +161,11 @@ video {
 
   .box2 p {
     font-size: 0.7em;
+  }
+
+  /*sobre-a-loja section*/
+  #sobre-a-loja .col-md-7 {
+    margin-top: 30px;
   }
 } 
 
