@@ -106,9 +106,24 @@ video {
 }
 
 #sobre-a-loja .col-md-7 p,
-#sobre-a-loja .col-md-7 ul li {
+#sobre-a-loja .col-md-7 ul li,
+#eventos .row .col-md-4 p
+{
   font-size: 0.9em;
+}
+
+#sobre-a-loja .col-md-7 p,
+#sobre-a-loja .col-md-7 ul li {
   text-align: justify;
+}
+
+/*eventos section*/
+#eventos .row .col-md-4 img {
+  object-fit: cover;
+}
+
+#eventos .row .col-md-4 {
+  height: 450px;
 }
 
 /*md screen*/
@@ -126,8 +141,13 @@ video {
 
   /*sobre-a-loja section*/
   #sobre-a-loja .col-md-7 p,
-  #sobre-a-loja .col-md-7 ul li {
+  #sobre-a-loja .col-md-7 ul li,
+  #eventos .row .col-md-4 p {
     font-size: 0.8em;
+  }
+
+  #sobre-a-loja .col-md-7 p,
+  #sobre-a-loja .col-md-7 ul li {
     text-align: justify;
   }
 }
@@ -164,6 +184,10 @@ video {
   }
 
   /*sobre-a-loja section*/
+  #sobre-a-loja {
+    padding-bottom: 1em !important;
+  }
+
   #sobre-a-loja .col-md-7 {
     margin-top: 30px;
   }
