@@ -27,12 +27,12 @@ body {
   transition: background-color 500ms linear;
 }
 
-.nav .nav-link.active {
+#navbar .nav .nav-link.active {
   background-color: #eeeeeeb2;
   color: #000;
 }
 
-.nav .nav-link:not(.active) {
+#navbar .nav .nav-link:not(.active) {
   color: #ffffff;
   text-shadow: 1px 1px #000;
 }
@@ -126,6 +126,39 @@ video {
   height: 450px;
 }
 
+/*produtos section*/
+.nav-cardapio button.nav-link:not(.active) {
+  color: #000;
+  background-color: #ccc;
+}
+.nav-cardapio button.nav-link.active {
+  color: #000;
+  background-color:#b1012d;
+}
+
+aside nav button:first-child {
+  background-color: #800020 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  cursor: not-allowed !important;
+}
+
+.nav-cardapio button:nth-child(2),
+.nav-cardapio button:nth-child(3) {
+  border-radius: 0;
+}
+
+.nav-cardapio button:last-child {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.nav-cardapio .nav-link:hover:not(:first-child) {
+  background-color: #eb4a72 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
 /*md screen*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /*carousel*/
@@ -191,5 +224,11 @@ video {
   #sobre-a-loja .col-md-7 {
     margin-top: 30px;
   }
+
+  /*produtos section*/
+  .nav-cardapio button {
+    text-align: center !important;
+  }
+
 } 
 
