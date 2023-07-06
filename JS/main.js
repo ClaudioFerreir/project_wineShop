@@ -38,3 +38,7 @@ function Contador(elementoId) {
 
 const counter1 = new Contador('counter1');
 const counter2 = new Contador('counter2');
+const counter3 = new Contador('counter3');
+const counter4 = new Contador('counter4');
+const counter5 = new Contador('counter5');
+const counter6 = new Contador('counter6');
