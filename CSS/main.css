@@ -118,6 +118,10 @@ video {
 }
 
 /*eventos section*/
+#eventos {
+  background-color: #f1ecec;
+}
+
 #eventos .row .col-md-4 img {
   object-fit: cover;
 }
@@ -129,7 +133,7 @@ video {
 /*produtos section*/
 .nav-cardapio button.nav-link:not(.active) {
   color: #000;
-  background-color: #ccc;
+  background-color: #faf0f0;
 }
 .nav-cardapio button.nav-link.active {
   color: #000;
@@ -137,6 +141,8 @@ video {
 }
 
 aside nav button:first-child {
+  text-align: left;
+  color: #fff !important;
   background-color: #800020 !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -157,6 +163,10 @@ aside nav button:first-child {
   background-color: #eb4a72 !important;
   color: #fff !important;
   font-weight: bold !important;
+}
+
+.color-price {
+  color: #b1012d;
 }
 
 .tab-pane .btn-group {
@@ -206,6 +216,12 @@ input[type="number"] {
   #sobre-a-loja .col-md-7 ul li {
     text-align: justify;
   }
+
+  .btn-group {
+    width: 78%;
+    margin-bottom: 0.5em;
+  }
+
 }
 
 /*sm screen*/
@@ -248,11 +264,20 @@ input[type="number"] {
     margin-top: 30px;
   }
 
+  /*eventos section*/
+  #eventos {
+    padding-top: 1em !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
   /*produtos section*/
+  .btn-group {
+    margin-right: 1em;
+  }
   .nav-cardapio button {
     text-align: center !important;
   }
-
-
 } 
 
