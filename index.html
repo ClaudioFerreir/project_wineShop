@@ -442,5 +442,66 @@
       </div>
     </div>
   </section>
+  <!--Contato-->
+  <section id="contato" class="p-5">
+    <div class="container">
+      <div class="row">
+        <h2 class="special-font text-center pb-5">Fale Conosco</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <form>
+            <div class="form-floating mb-3">
+              <input type="text" id="nome" class="form-control" required>
+              <label for="nome" class="form-label">Seu nome</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" id="email" class="form-control" required>
+              <label for="email" class="form-label">Seu melhor e-mail</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="tel" id="telefone" class="form-control" required>
+              <label for="telefone" class="form-label">Seu telefone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea id="mensagem" class="form-control" required></textarea> 
+              <label for="mensagem" class="form-label">Sua mensagem</label>
+            </div>
+            <div class="mb-3">
+              <label for="comprovantePIX" class="form-label">Envie o comprovante de pagamento</label>
+              <input class="form-control form-control-sm" id="comprovantePIX" type="file">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" value="" id="terms" required>
+              <label class="form-check-label" for="terms">
+                Li e concordo com os <a href="#">termos de uso</a>
+              </label>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </div>
+        <div class="col-md-5">
+          <div class="row area-pix">
+            <h3 class="text-center">Pagamento via PIX</h3>
+            <div class="d-block w-100 text-center">
+              <img src="https://via.placeholder.com/200x200" alt="">
+            </div>
+            <div class="row">
+              <div class="col-md-10">
+                <div class="cod-pix pt-2">
+                  <textarea id="codigo" class="pix-number pe-0 text-end" readonly>240985672-09467240-39568204935694327684725984375934570458024358004957820943578204654390853430549</textarea>
+                </div>
+              </div>
+              <div class="col-md-2 d-flex">
+                <a id="btnCopiar" class="align-self-center text-decoration-none" onclick="copiarCodigo()">
+                  <i class="bi bi-clipboard-check special-font fst-normal fw-bold">Copiar</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

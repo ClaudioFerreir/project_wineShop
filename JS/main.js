@@ -54,3 +54,14 @@ const counter15 = new Contador('counter15');
 const counter16 = new Contador('counter16');
 const counter17 = new Contador('counter17');
 const counter18 = new Contador('counter18');
+
+//copiar link do PIX
+function copiarCodigo() {
+  const codigoElement = document.getElementById('codigo');
+
+  codigoElement.select();
+  codigoElement.setSelectionRange(0, 99999); //para dispositivos moveis 
+
+  document.execCommand('copy');
+  alert('Código copiado: ' + codigoElement.value);
+}
