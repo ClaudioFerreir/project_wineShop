@@ -159,6 +159,26 @@ aside nav button:first-child {
   font-weight: bold !important;
 }
 
+.tab-pane .btn-group {
+  width: 100px;
+  height: 38px;
+}
+
+.tab-pane .btn-group input {
+  width: 80% !important;
+}
+
+/*removemos o spin de aumento e diminuicao no input type number*/
+input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 /*md screen*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /*carousel*/
@@ -229,6 +249,7 @@ aside nav button:first-child {
   .nav-cardapio button {
     text-align: center !important;
   }
+
 
 } 
 
