@@ -157,30 +157,279 @@
           <div class="tab-content">
             <div class="tab-pane active">
               <div class="row">
-                <div class="col-md-3 border rounded mb-5 p-3 d-flex flex-column justify-content-between">
-                  <img class="d-block w-100" src="./images/produtos/tinto/cabernet-franc-1955.jpg" alt="">
-                  <h5>Cabernet Franc 1955</h5>
-                  <p>Sociedade Vinícula Rio-Grandense</p>
-                  <p class="fw-bold">R$699,00</p>
-                  <div class="text-center">
-                    <div class="btn-group">
-                      <button type="button" id="btnSubtract" class="btn btn-secondary">-</button>
-                      <input type="number" id="display" class="text-center" placeholder="1"></input>
-                      <button type="button" id="btnAdd" class="btn btn-secondary">+</button>
-                    </div>
-                    <button type="button" class="btn btn-danger">Comprar</button>
-                  </div>
-                </div>
-                <div class="col-md-3 border rounded mb-5 p-3 d-flex flex-column justify-content-between">
-                  <img class="d-block w-100" src="./images/produtos/tinto/candido-valduga.jpg" alt="">
-                  <h5>Cândido Valduga</h5>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/tinto/cabernet-franc-1955.jpg" alt="vinho tinto cabernet franc">
+                  <h5 class="text-center">Cabernet Franc 1955</h5>
                   <div>
-                    <p class="fw-bold">R$699,00</p>
+                    <p class="fw-bold text-center">R$699,00</p>
                     <div class="text-center">
                       <div class="btn-group">
-                        <button type="button" id="btnSubtract" class="btn btn-secondary">-</button>
-                        <input type="number" id="display" class="text-center" placeholder="1"></input>
-                        <button type="button" id="btnAdd" class="btn btn-secondary">+</button>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter1.decrement()">-</button>
+                        <input type="number" id="counter1" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter1.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/tinto/candido-valduga.jpg" alt="vinho tinto candido valduga">
+                  <h5 class="text-center">Cândido Valduga</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$699,00</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter2.decrement()">-</button>
+                        <input type="number" id="counter2" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter2.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/tinto/dilor-vila-francioni-2009.jpg" alt="vinho tinto dilor francioni 2009">
+                  <h5 class="text-center">Vila Francioni Dilor</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$725,00</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter3.decrement()">-</button>
+                        <input type="number" id="counter3" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter3.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/tinto/miolo-sesmarias.jpg" alt="vinho tinto Miolo Sesmarias">
+                  <h5 class="text-center">Miolo Sesmarias</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$935,00</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter4.decrement()">-</button>
+                        <input type="number" id="counter4" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter4.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/tinto/primeira-estrada-gran-reserva-syrah.jpg" alt="vinho tinto Primeira Estrada Gran Reserva Syrah">
+                  <h5 class="text-center">Primeira Estrada Gran Reserva Syrah</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$299,00</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter5.decrement()">-</button>
+                        <input type="number" id="counter5" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter5.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/tinto/valparaiso-nebbiolo.jpg" alt="vinho tinto Valparaiso Vitale Nebbiolo">
+                  <h5 class="text-center">Valparaiso Vitale Nebbiolo</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$169,90</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter6.decrement()">-</button>
+                        <input type="number" id="counter6" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter6.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane">
+              <div class="row">
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/branco/alian_a-chardonnay.jpg" alt="vinho branco alian chardonnay">
+                  <h5 class="text-center">Aliança Chardonnay</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$66,90</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter1.decrement()">-</button>
+                        <input type="number" id="counter1" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter1.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/branco/g_es_tempo_de_goes_sauvignon-blanc.jpg" alt="vinho branco Tempos de Góes Reserva Sauvignon Blanc">
+                  <h5 class="text-center">Tempos de Góes Reserva Sauvignon Blanc</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$73,90</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter2.decrement()">-</button>
+                        <input type="number" id="counter2" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter2.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/branco/gaio-prezopsit_-chardonnay.jpg" alt="vinho branco Gaio Preziosità Chardonnay">
+                  <h5 class="text-center">Gaio Preziosità Chardonnay</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$53,80</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter3.decrement()">-</button>
+                        <input type="number" id="counter3" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter3.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/branco/gaio-riesling_1.jpg" alt="vinho branco Gaio Preziosità Riesling">
+                  <h5 class="text-center">Gaio Preziosità Riesling</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$53,80</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter4.decrement()">-</button>
+                        <input type="number" id="counter4" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter4.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/branco/parole-di-famiglia-alvarinho.jpg" alt="vinho branco Don Affonso Parole di Famiglia Alvarinho">
+                  <h5 class="text-center">Don Affonso Parole di Famiglia Alvarinho</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$82,80</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter5.decrement()">-</button>
+                        <input type="number" id="counter5" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter5.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/branco/valparaiso-torrontes.jpg" alt="vinho branco Valparaiso Vitale Torrontés">
+                  <h5 class="text-center">Valparaiso Vitale Torrontés</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$108,00</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter6.decrement()">-</button>
+                        <input type="number" id="counter6" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter6.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane">
+              <div class="row">
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/espumante/castelamare-brut-rose.jpg" alt="vinho Espumante Espumante Castellamare Brut Rosé">
+                  <h5 class="text-center">Espumante Castellamare Brut Rosé</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$52,80</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter1.decrement()">-</button>
+                        <input type="number" id="counter1" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter1.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/espumante/castelamare-moscatel-rose.jpg" alt="vinho Espumante Castellamare Moscatel Rosé">
+                  <h5 class="text-center">Espumante Castellamare Moscatel Rosé</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$44,80</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter2.decrement()">-</button>
+                        <input type="number" id="counter2" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter2.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/espumante/di_mallo_espumante_ros_-brut.jpg" alt="vinho Espumante Di Mallo Brut Rosé">
+                  <h5 class="text-center">Espumante Di Mallo Brut Rosé</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$37,80</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter3.decrement()">-</button>
+                        <input type="number" id="counter3" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter3.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/espumante/garibaldi_primicias_moscatel.jpg" alt="vinho Espumante Garibaldi Primícias Moscatel">
+                  <h5 class="text-center">Espumante Garibaldi Primícias Moscatel</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$24,90</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter4.decrement()">-</button>
+                        <input type="number" id="counter4" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter4.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/espumante/luvison-moscatel-ros_.jpg" alt="vinho Espumante Luvison Moscatel Rosé">
+                  <h5 class="text-center">Espumante Luvison Moscatel Rosé</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$61,90</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter5.decrement()">-</button>
+                        <input type="number" id="counter5" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter5.increment()">+</button>
+                      </div>
+                      <button type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 rounded mb-5 p-3 d-flex flex-column justify-content-between">
+                  <img class="d-block w-100" src="./images/produtos/espumante/petronius-brut.jpg" alt="vinho Espumante Petronius Brut">
+                  <h5 class="text-center">Espumante Petronius Brut</h5>
+                  <div>
+                    <p class="fw-bold text-center">R$132,00</p>
+                    <div class="text-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter6.decrement()">-</button>
+                        <input type="number" id="counter6" class="text-center" placeholder=""></input>
+                        <button type="button" class="btn btn-secondary p-1 fw-bold" onclick="counter6.increment()">+</button>
                       </div>
                       <button type="button" class="btn btn-danger">Comprar</button>
                     </div>

@@ -160,12 +160,15 @@ aside nav button:first-child {
 }
 
 .tab-pane .btn-group {
-  width: 100px;
   height: 38px;
 }
 
 .tab-pane .btn-group input {
-  width: 80% !important;
+  width: 30px !important;
+}
+
+.tab-pane .btn-group button {
+  width: 20% !important;
 }
 
 /*removemos o spin de aumento e diminuicao no input type number*/
