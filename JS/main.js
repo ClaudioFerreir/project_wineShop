@@ -12,31 +12,29 @@ window.addEventListener('scroll', function () {
 })
 
 //contador produtos
-const displayElement = document.getElementById('display');
-const btnAdd = document.getElementById('btnAdd');
-const btnSubtract = document.getElementById('btnSubtract');
+function Contador(elementoId) {
+  const displayElement = document.getElementById(elementoId);
+  let count = 1;
 
-let count = 0;
+  //atualiza o display
+  function updateDisplay() {
+    displayElement.value = count;
+  }
 
-//atualiza o display
-function updateDisplay() {
-  displayElement.value = count;
-}
-
-//adiciona 1 ao contador
-function add() {
-  count++;
-  updateDisplay();
-}
-
-//subtrai 1 do contador
-function subtract() {
-  if (count > 0) {
-    count--;
+  //adiciona 1 ao contador
+  this.increment = function() {
+    count++;
     updateDisplay();
+  }
+
+  //subtrai 1 do contador
+  this.decrement = function() {
+    if (count > 1) {
+      count--;
+      updateDisplay();
+    }
   }
 }
 
-//adiciona evento de click ao botão de adicionar
-btnAdd.addEventListener('click', add);
-btnSubtract.addEventListener('click', subtract);
+const counter1 = new Contador('counter1');
+const counter2 = new Contador('counter2');
