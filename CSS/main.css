@@ -167,7 +167,8 @@ aside nav button:first-child {
   font-weight: bold !important;
 }
 
-.color-price {
+.color-price,
+.redes-sociais a i {
   color: #b1012d;
 }
 
@@ -214,6 +215,11 @@ input[type="number"] {
   overflow-x: hidden;
 }
 
+/*rede-sociais*/
+.redes-sociais {
+  font-size: 30px;
+  justify-content: center;
+}
 
 /*md screen*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
