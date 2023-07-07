@@ -195,6 +195,19 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+/*form section*/
+#contato form button,
+#produtos button.btn-danger {
+  background-color: #b1012d;
+  color: #fff;
+}
+
+#contato form button:hover,
+#produtos button.btn-danger:hover {
+  background-color: #e4033b;
+  color: #fff;
+}
+
 /*area Pix section*/
 .area-pix .cod-pix textarea{
   font-size: .8em;
