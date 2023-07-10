@@ -1,5 +1,21 @@
 console.log('main.js loaded');
 
+//modal advertising
+document.addEventListener('DOMContentLoaded', function() {
+  const modalAdvertising = new bootstrap.Modal('#advertisingModal');
+  modalAdvertising.show();
+})
+
+//modal cookies
+// Cookies Alert
+const enterSite = document.getElementById('enterSite');
+enterSite.addEventListener('click', function() {
+  setTimeout(function() {
+    const mensagem = document.getElementById('cookiesAlert');
+    mensagem.classList.remove('d-none');
+    }, 1000);
+});
+
 //navbar efect
 window.addEventListener('scroll', function () {
   var navbar = document.getElementById('navbar');
