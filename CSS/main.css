@@ -2,6 +2,17 @@ body {
   font-family: 'Varela', sans-serif;
 }
 
+/*modal advertising*/
+#advertisingModal .modal-content {
+  background-color: #000;
+}
+
+.modal-header h2, 
+.modal-body p {
+  color: #800020;
+  font-family: 'concert one', cursive;
+}
+
 /*navbar*/
 .header {
   background: url(../videos/welcome-experience.mp4);

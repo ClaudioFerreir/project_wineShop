@@ -21,6 +21,29 @@
   <script src="./JS/main.js" defer></script>
 </head>
 <body>
+  <!--Modal advertising-->
+  <div class="modal fade" id="advertisingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="advertisingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border border-0">
+          <h2 class="modal-title fs-1" id="advertisingLabel">Bem-vindo a WineShop</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body border border-0">
+          <p class="fs-4">Você tem mais de 18 anos (obrigatório)?</p>
+        </div>
+        <div class="modal-footer border border-0">
+          <button id="enterSite" type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Sim</button>
+          <button type="button" class="btn btn-outline-danger">Não</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal Alert-->
+  <div id="cookiesAlert" class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+    Este site utiliza cookies para melhorar a sua experiência de navegação. Ao continuar navegando, você concorda com a nossa <a href="#">Política de Privacidade.</a>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
   <!--Header-->
   <header id="navbar" class="navbar navbar-expand-lg sticky-top px-4 pt-0 pb-4">
     <div class="container align-items-baseline">
